@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Documentation Page</title>
+</head>
+
+<body>
+  <div class="nav-btn">
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+  <!===== NAVABAR =====>
+  <nav id="navbar" class="nav">
+    <header>Js Documentation</header>
+    <ul class="nav-links">
+      <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+      <li><a href="#Variables" class="nav-link">Variables</a></li>
+      <li><a href="#Function" class="nav-link">Function</a></li>
+      <li><a href="#Array" class="nav-link">Array</a></li>
+      <li><a href="#Object" class="nav-link">Object</a></li>
+    </ul>
+  </nav>
+  
+  <!===== MAIN =====>
+  <main id="main-doc">
+    
+    <!===== INTRODUCTION =====>
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p><span>JavaScript (JS)</span> is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat. JavaScript is a prototype-based, multi-paradigm, single-threaded, dynamic language, supporting object-oriented, imperative, and declarative (e.g. functional programming) styles.</p>
+
+      <p>This section is dedicated to the JavaScript language itself, and not the parts that are specific to Web pages or other host environments.</p>
+
+      <p>Do not confuse <span>JavaScript with the Java</span> programming language. Both "Java" and "JavaScript" are trademarks or registered trademarks of Oracle in the U.S. and other countries. However, the two programming languages have very different syntax, semantic, and use.</p>
+    </section>
+    
+    <!===== VARIABLES =====>
+    <section class="main-section" id="Variables">
+      <header>Variables</header>
+      
+      <p>There are 3 ways to declare a JavaScript variable:</p>
+      <ul class="ul-variable">
+        <li>using var</li>
+        <li>using let</li>
+        <li>using const</li>
+      </ul>
+      <p>This chapter uses var.</p>
+      <p class="var-explain">Variables are containers for storing data (values).</p>
+      
+      <h3 class="example">Example</h3>
+      <code>
+       var x = 5;<br>
+       var y = 6;<br>
+       var z = x + y;
+      </code>
+      <p>From the example above, you can expect:</p>
+      <ul class="ul-variable">
+        <li>x stores the value 5</li>
+        <li>y stores the value 6</li>
+        <li>z stores the value 11</li>
+      </ul>
+    </section>
+    
+    <!===== FUNCTION =====>
+    <section class="main-section" id="Function">
+      <header>Function</header>
+      
+      <p>A JavaScript function is defined with the <span>function</span>   keyword, followed by a <span>name</span>, followed by parentheses <span>()</span>.</p>
+      
+      <p>Function names can contain letters, digits, underscores, and dollar signs (same rules as variables).</p>
+      
+      <p>The parentheses may include parameter names separated by commas: <span>(parameter1, parameter2, ...)</span></p>
+      
+      <p>The code to be executed, by the function, is placed inside curly brackets: <span>{}</span></p>
+      
+      <h3 class="example">Example</h3>
+      <code>
+      function name(parameter1, parameter2, parameter3) {<br>
+          // code to be executed <br>
+       }
+      </code>
+      
+      <h4>Function Return</h4>
+      <p>When JavaScript reaches a <span>return</span> statement, the function will stop executing.</p>
+      
+      <p>If the function was invoked from a statement, JavaScript will "return" to execute the code after the invoking statement.</p>
+      
+      <p>Functions often compute a return value. The <span>return value</span> is "returned" back to the "caller":</p>
+      <h3 class="example">Example</h3>
+      <code>
+        function myFunction(a, b) {<br>
+          return a * b;<br>
+          // Function returns the product of a and b <br>
+        } <br><br>
+        let x = myFunction(4, 3);<br>   // Function is called, return value will end up in x <br><br>
+        //the result in x will be 12
+        </code>
+    </section>
+    <!===== ARRAY =====>
+    <section class="main-section" id="Array">
+      <header>Array</header>
+      
+      <p>JavaScript <span>arrays</span> are used to store multiple values in a single variable.</p>
+      
+      <p>An array is a <span>special variable</span>, which can hold more than one value at a time.</p>
+      
+      <h3 class="example">Example</h3>
+      <code>const ninjas = ["Naruto", "Sasuke", "Sakura"];</code>
+      
+      <p>An array can hold many values under a single name, and you can access the values by referring to an <span>index</span> number.</p>
+    </section>
+    
+    <h3 class="example">Example</h3>
+      <code>const Jubies = [<br>
+          "Kurama", // index 1<br>
+          "Hachibi", // index 2<br> 
+          "Sukaku" // index 3<br>
+      ];</code>
+    
+    <!===== OBJECT =====>
+    <section class="main-section" id="Object">
+      <header>Object</header>
+      
+      <p>Objects are <span>variables</span> too. But objects can contain <span>many values</span>.</p>
+      <p>You define (and create) a JavaScript object with an <span>object literal</span>:</p>
+      <h3 class="example">Example</h3>
+      <code>
+        const person = {<br>
+        firstName:"John",<br>
+        lastName:"Doe",<br>
+        age:50,<br>
+        eyeColor:"blue"<br>
+        };
+      </code>
+      
+    </section>
+    
+  </main>
+  
+
+
+<!===== LINK FCC TEST =====>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<script src="script.js"></script>
+</body>
+
+</html>

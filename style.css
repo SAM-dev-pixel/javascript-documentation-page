@@ -1,0 +1,121 @@
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: #000;
+  color: #eee;
+  font-family: 'Roboto Mono', sans-serif;
+  font-size: 1.4rem;
+  display: flex;
+  padding: 1.3rem;
+  position: relative;
+  
+}
+#navbar {
+  flex: 1;
+  padding-right: 1.3rem;
+  
+}
+.nav-links {
+  list-style: none;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: #eee;
+  margin-bottom: 1.2rem;
+  display: block;
+  border-bottom: 1px solid lime;
+  border-radius: 1px;
+}
+.nav-btn {
+  display: none;
+}
+header {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1.6rem;
+  border-bottom: 2px solid lime;
+  border-radius: 2px;
+}
+span {
+  font-weight: 600;
+  color: lime;
+}
+p {
+  margin-bottom: 1.2rem;
+}
+h4 {
+  font-size: 1.8rem;
+  margin: 1rem 0;
+}
+code {
+  width: max-content;
+  padding: .6rem;
+  margin-bottom: 1rem;
+  background: #eee;
+  color: #333;
+  border-radius: .3rem;
+  display: block;
+}
+  
+#main-doc {
+  flex: 4;
+  padding: 0 1.3rem;
+  height: 100vh;
+  overflow-y: scroll;
+}
+  
+.ul-variable {
+  margin-left: 2.5rem;
+  margin-bottom: 2.5rem;
+  display: block;
+  color: lime;
+}
+.var-explain {
+  margin-top: 2.6rem;
+}
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+  #main-doc {
+    padding: 0;
+  }
+  .nav {
+    position: fixed;
+    top: -150%;
+    left: 0;
+    background: #000;
+    transition: .3s;
+  }
+  .nav-btn {
+    margin: auto;
+    position: sticky;
+    top: 5px;
+    cursor: pointer;
+    height: 10px;
+    display: block;
+  }
+  .down {
+    transition: .3s;
+    position: sticky;
+    top: 0;
+  }
+  .line {
+    width: 90px;
+    height: 3px;
+    background: lime;
+    margin: 3px;
+    border-radius: 3px;
+  }
+  .line:nth-child(2) {
+    width: 60px;
+    margin: auto;
+  }
+  
+}
